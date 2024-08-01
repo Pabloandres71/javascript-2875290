@@ -94,8 +94,8 @@ body {
         padding: 0;
     }
     
-    .tarea {
-        background: #000000;
+    li {
+        background: #f9f9f9;
         margin: 10px 0;
         padding: 10px;
         border-radius: 4px;

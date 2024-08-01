@@ -1,0 +1,115 @@
+/* Reseteo básico para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilo para el contenedor de la barra de navegación */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para el título de la barra de navegación */
+.navbar-title {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+/* Estilo para el menú de navegación */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilo para los elementos del menú de navegación */
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Estilo para los enlaces del menú de navegación en hover */
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    overflow: hidden;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+
+/* Estilo para la tarjeta */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para la tarjeta */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card img {
+    width: 100%;
+    height: 572px;
+    display: block;
+    object-fit: cover;
+    
+}
+
+/* Estilo para el contenido de la tarjeta */
+.card-content {
+    padding: 20px;
+}
+
+/* Estilo para las etiquetas dentro del contenido */
+.label {
+    font-weight: bold;
+}
+
+/* Estilo para los encabezados de la tarjeta */
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilo para los párrafos de la tarjeta */
+.card-content p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #666;
+}

@@ -1,32 +1,28 @@
+var inputTarea = document.getElementById("tarea");
+var btn = document.getElementById("agregar");
+var listado = document.getElementById("lista");
 
-const inputTarea = document.querySelector('#tarea');
-const btnCrear = document.querySelector('#agregar');
-const listado = document.querySelector('#lista');
-const btnEliminar = document.querySelector('span');
+btn.onclick = function() {
+        if (inputTarea.value == "") {
+        return;
+    }
 
+    var elemento = inputTarea.value;
+    var li = document.createElement("li");
 
-function colocar() {
+    li.textContent = elemento;
+    listado.appendChild(li);
 
-    const tarea = document.createElement('div');
-    tarea.innerText = inputTarea.value;
-    tarea.classList.add('tarea');
-   
-
-    listado.appendChild(tarea);
-
-    console.log(tarea)
-}
-
-function eliminar (){
-   
+    var btnEliminar = document.createElement("span");
     btnEliminar.textContent = "X";
-    listado.appendChild(btnEliminar);
+    li.appendChild(btnEliminar);
 
-    btnEliminar.onclick = function(){
-        listado.remove();
+    btnEliminar.onclick = function() {
+        li.remove();
         total--;
         cantidad.innerHTML = total;
     }
+
+    inputTarea.value = "";
+
 }
-btnCrear.addEventListener('click',colocar);
-btnEliminar.addEventListener ('click',eliminar);
