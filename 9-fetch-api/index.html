@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de VideoJuegos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Éxitos del pop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <div class="titulo">Galeria de video juegos</div>
     <header class="heade">
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="navbar-title">Galería de Videojuegos</h1>
-                <ul class="navbar-menu">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#games">Juegos</a></li>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
         <form id="buscador">
             <input id="textoBusqueda" type="text">
-            <select id="listaGenero">
-                <option value="All">Todos</option>
-                <option value="Age">Año</option>
-                <option value="Gender">Genero</option>
-                <option value="Creater">Creador</option>
-                <option value="Age-recomendy">Edad Recomendada</option>
+            <select id="edadRecomendada">
+                <option value="All">edad</option>
+                <option value="edad-E10+">edad-E 10+</option>
+                <option value="edad-E">edad-E</option>
+                <option value="edad-M">edad-M</option>
+                <option value="edad-T">edad-T</option>
             </select>
-            <select id="genero">
-                <option value="All">Todos</option>
-                <option value="Acción">Acción</option>
-                <option value="RPG">RPG</option>
-                <option value="Aventura">Aventura</option>
+            <select id="listaAños">
+                <option value="All">año</option>
+                <option value="2017">2017</option>
+                <option value="2015">2015</option>
+                <option value="2011">2011</option>
+                <option value="2016">2016</option>
+                <option value="2013">2013</option>
+                <option value="2020">2020</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2010">2010</option>
             </select>
             <button class="btnBuscar" type="submit">Buscar</button>
         </form>
     </header>
 
-    
-  
-
-<div class="contenedor"></div>
+<div class="container"></div>
 <script src="bd.js"></script>
 <script src="app.js"></script>
 </body>
